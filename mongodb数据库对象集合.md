@@ -33,7 +33,7 @@ use jinbadata;
 switched to db jinbadata
 ```
 
-以上实例命令中，"student" 是你要检索的数据库。
+以上实例命令中，"jinbadata" 是你要检索的数据库。
 
 在下一个章节我们将详细讲解MongoDB中命令的使用。
 
