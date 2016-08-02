@@ -1,6 +1,6 @@
 # **NoSQL 简介**
 
-NoSQL\(NoSQL = Not Only SQL \)，意即"不仅仅是SQL"。 
+NoSQL\(NoSQL = Not Only SQL \)，意即"不仅仅是SQL"。
 
 在现代的计算系统上每天网络上都会产生庞大的数据量。
 
@@ -149,19 +149,5 @@ mark :  一篇比较好的柔性事务贴: http:\/\/www.zhihu.com\/question\/318
 | 对象存储 | db4o Versant | 通过类似面向对象语言的语法操作数据库，通过对象的方式存取数据。 |
 | xml数据库 | Berkeley DB XML BaseX | 高效的存储XML数据，并支持XML的内部查询语法，比如XQuery,Xpath。 |
 
-## **谁在使用**
-
-现在已经有很多公司使用了NoSQL：
-
-+
-
-* Google
-* Facebook
-* Mozilla
-* Adobe
-* Foursquare
-* LinkedIn
-* Digg
-* McGraw-Hill Education
-* Vermont Public Radio
+## 
 
