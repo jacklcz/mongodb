@@ -26,7 +26,7 @@ document=({"userId":"1","name":"LiangChengZhu","age":18})
 
 **在集合中插入文档**
 
-将以上的文档数据存储到"myinfo" 数据库中的 "userdetails" 集合，执行如下命令：
+将以上的文档数据存储到"mytest" 数据库中的 "userinfo" 集合，执行如下命令：
 
 ```
 db.userdetails.insert(document)
