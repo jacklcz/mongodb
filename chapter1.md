@@ -1,4 +1,4 @@
-# MongoDB 安装和使用
+# MongoDB 安装和命令行使用
 
 # **window平台**
 
