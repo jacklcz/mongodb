@@ -16,7 +16,7 @@ MongoDB将数据目录存储在 \*\*\/data\/db 目录下。但是这个数据目
 
 从MongoDB目录的bin目录中执行mongod.exe文件。
 
-# **MAC平台**
+# **MAC平台 **
 
 使用brew install mongodb 或者官网下载 [http:\/\/www.mongodb.org\/downloads](http://www.mongodb.org/downloads "官网下载地址") ，配置环境变量即可。
 
