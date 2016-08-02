@@ -35,13 +35,7 @@ use mytest;
 >show collections; //查看当前db所有集合
 ```
 
-
-
-
-
 ## **使用javaScript 批量插入文档**
-
-
 
 ![](/assets/A80F8C17-9497-47FC-A5E1-8760CFEEFDA9.png)
 
