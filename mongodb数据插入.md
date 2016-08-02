@@ -20,19 +20,11 @@ use mytest; switch to db mytest;
 
 ## **为MongoDB数据库定义一个文档**
 
-以下文档可以存储在MongoDB中：
-
 ```
 document=({"userId":"1","name":"LiangChengZhu","age":18})
 ```
 
-命令执行如下图所示：
-
-## **显示已定义的文档**
-
-已定义的文档显示格式如下所示：
-
-## **在集合中插入文档**
+**在集合中插入文档**
 
 将以上的文档数据存储到"myinfo" 数据库中的 "userdetails" 集合，执行如下命令：
 
