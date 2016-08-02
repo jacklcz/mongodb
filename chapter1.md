@@ -2,7 +2,7 @@
 
 # **window平台**
 
-[http:\/\/www.mongodb.org\/downloads](https://wizardforcel.gitbooks.io/w3school-mongodb/content/www.mongodb.org/downloads)
+[http:\/\/www.mongodb.org\/downloads](http://www.mongodb.org/downloads "官网下载地址")
 
 ## **解压**
 
@@ -18,7 +18,7 @@ MongoDB将数据目录存储在 \*\*\/data\/db 目录下。但是这个数据目
 
 # **MAC平台**
 
-使用brew install mongodb ，配置环境变量即可。
+使用brew install mongodb 或者官网下载 [http:\/\/www.mongodb.org\/downloads](http://www.mongodb.org/downloads "官网下载地址") ，配置环境变量即可。
 
 ![](/assets/BC304E0F-6B34-44AE-A86A-759D7972C49C.png)
 
