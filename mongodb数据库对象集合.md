@@ -57,7 +57,6 @@ bson数据可以理解为在json的基础上添加了一些json中没有的数�
 
 ```
 { site : "91jinrong.com" }
-
 ```
 
 通常，"object（对象）" 术语是指一个文件。
