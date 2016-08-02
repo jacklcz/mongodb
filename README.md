@@ -26,15 +26,9 @@ NoSQL 是一项全新的数据库革命性运动，早期就有人提出，发�
 
 **4、D \(Durability\) 持久性**持久性是指一旦事务提交后，它所做的修改将会永久的保存在数据库上，即使出现宕机也不会丢失。
 
-
-
-
-
 ## **为什么使用NoSQL ?**
 
 今天我们可以通过第三方平台（如：Google,Facebook等）可以很容易的访问和抓取数据。用户的个人信息，社交网络，地理位置，用户生成的数据和用户操作日志已经成倍的增加。我们如果要对这些用户数据进行挖掘，那SQL数据库已经不适合这些应用了, NoSQL数据库的发展也却能很好的处理这些大的数据。
-
-
 
 ## **实例**
 
@@ -77,15 +71,9 @@ Task: Retrieve all pages regarding athletics of Summer Olympic before 1950.
 * CAP定理
 * 高性能，高可用性和可伸缩性
 
+## **NoSQL 强调**
 
-
-## **NoSQL 简史**
-
-NoSQL一词最早出现于1998年，是Carlo Strozzi开发的一个轻量、开源、不提供SQL功能的关系数据库。
-
-2009年，Last.fm的Johan Oskarsson发起了一次关于分布式开源数据库的讨论\[2\]，来自Rackspace的Eric Evans再次提出了NoSQL的概念，这时的NoSQL主要指非关系型、分布式、不提供ACID的数据库设计模式。
-
-2009年在亚特兰大举行的"no:sql\(east\)"讨论会是一个里程碑，其口号是"select fun, profit from real\_world where relational=false;"。因此，对NoSQL最普遍的解释是"非关联型的"，强调Key-Value Stores和文档数据库的优点，而不是单纯的反对RDBMS。
+强调Key-Value Stores和文档数据库的优点，而不是单纯的反对RDBMS。
 
 ## **CAP定理（CAP theorem）**
 
@@ -102,8 +90,6 @@ CAP理论的核心是：一个分布式系统不可能同时很好的满足一�
 * CA - 单点集群，满足一致性，可用性的系统，通常在可扩展性上不太强大。
 * CP - 满足一致性，分区容忍必的系统，通常性能不是特别高。
 * AP - 满足可用性，分区容忍性的系统，通常可能对一致性要求低一些。
-
-
 
 ## **NoSQL的优点\/缺点**
 
@@ -148,7 +134,7 @@ BASE是NoSQL数据库通常对可用性及一致性的弱要求原则:
 | 原子性\(**A**tomicity\) | 基本可用\(**B**asically **A**vailable\) |
 | 一致性\(**C**onsistency\) | 软状态\/柔性事务\(**S**oft state\) |
 | 隔离性\(**I**solation\) | 最终一致性 \(**E**ventual consistency\) |
-| 持久性 \(**D**urable\) |  |
+| 持久性 \(**D**urable\) |
 
 ## **NoSQL 数据库分类**
 
@@ -166,8 +152,6 @@ BASE是NoSQL数据库通常对可用性及一致性的弱要求原则:
 现在已经有很多公司使用了NoSQ：
 
 +
-
-
 
 * Google
 * Facebook
