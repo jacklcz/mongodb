@@ -21,7 +21,17 @@ local      0.0.78GB
 
 执行 "db" 命令可以显示当前数据库对象或者集合。
 
+```
+db;
+test
+```
+
 运行"use"命令，可以连接到一个指定的数据库。
+
+```
+use jinbadata;
+switched to db jinbadata
+```
 
 以上实例命令中，"student" 是你要检索的数据库。
 
