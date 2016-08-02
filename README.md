@@ -26,3 +26,156 @@ NoSQL 是一项全新的数据库革命性运动，早期就有人提出，发�
 
 **4、D \(Durability\) 持久性**持久性是指一旦事务提交后，它所做的修改将会永久的保存在数据库上，即使出现宕机也不会丢失。
 
+
+
+
+
+## **为什么使用NoSQL ?**
+
+今天我们可以通过第三方平台（如：Google,Facebook等）可以很容易的访问和抓取数据。用户的个人信息，社交网络，地理位置，用户生成的数据和用户操作日志已经成倍的增加。我们如果要对这些用户数据进行挖掘，那SQL数据库已经不适合这些应用了, NoSQL数据库的发展也却能很好的处理这些大的数据。
+
+
+
+## **实例**
+
+社会化关系网:
+
+```
+Each record: UserID1, UserID2  
+Separate records: UserID, first_name,last_name, age, gender,...  
+Task: Find all friends of friends of friends of ... friends of a given user.
+
+```
+
+Wikipedia 页面 :
+
+```
+Large collection of documents  
+Combination of structured and unstructured data  
+Task: Retrieve all pages regarding athletics of Summer Olympic before 1950.
+
+```
+
+## **RDBMS vs NoSQL**
+
+**RDBMS**
+
+* 高度组织化结构化数据
+* 结构化查询语言（SQL） \(SQL\)
+* 数据和关系都存储在单独的表中。
+* 数据操纵语言，数据定义语言
+* 严格的一致性
+* 基础事务
+
+**NoSQL**
+
+* 代表着不仅仅是SQL
+* 没有声明性查询语言
+* 没有预定义的模式-键 - 值对存储，列存储，文档存储，图形数据库
+* 最终一致性，而非ACID属性
+* 非结构化和不可预知的数据
+* CAP定理
+* 高性能，高可用性和可伸缩性
+
+
+
+## **NoSQL 简史**
+
+NoSQL一词最早出现于1998年，是Carlo Strozzi开发的一个轻量、开源、不提供SQL功能的关系数据库。
+
+2009年，Last.fm的Johan Oskarsson发起了一次关于分布式开源数据库的讨论\[2\]，来自Rackspace的Eric Evans再次提出了NoSQL的概念，这时的NoSQL主要指非关系型、分布式、不提供ACID的数据库设计模式。
+
+2009年在亚特兰大举行的"no:sql\(east\)"讨论会是一个里程碑，其口号是"select fun, profit from real\_world where relational=false;"。因此，对NoSQL最普遍的解释是"非关联型的"，强调Key-Value Stores和文档数据库的优点，而不是单纯的反对RDBMS。
+
+## **CAP定理（CAP theorem）**
+
+在计算机科学中, CAP定理（CAP theorem）, 又被称作 布鲁尔定理（Brewer's theorem）, 它指出对于一个分布式计算系统来说，不可能同时满足以下三点:
+
+* **一致性\(Consistency\)** \(所有节点在同一时间具有相同的数据\)
+* **可用性\(Availability\)** \(保证每个请求不管成功或者失败都有响应\)
+* **分隔容忍\(Partition tolerance\)** \(系统中任意信息的丢失或失败不会影响系统的继续运作\)
+
+CAP理论的核心是：一个分布式系统不可能同时很好的满足一致性，可用性和分区容错性这三个需求，最多只能同时较好的满足两个。
+
+因此，根据 CAP 原理将 NoSQL 数据库分成了满足 CA 原则、满足 CP 原则和满足 AP 原则三 大类：
+
+* CA - 单点集群，满足一致性，可用性的系统，通常在可扩展性上不太强大。
+* CP - 满足一致性，分区容忍必的系统，通常性能不是特别高。
+* AP - 满足可用性，分区容忍性的系统，通常可能对一致性要求低一些。
+
+
+
+## **NoSQL的优点\/缺点**
+
+优点:
+
+* * 高可扩展性
+
+* * 分布式计算
+
+* * 低成本
+
+* * 架构的灵活性，半结构化数据
+
+* * 没有复杂的关系
+
+
+缺点:
+
+* * 没有标准化
+
+* * 有限的查询功能（到目前为止）
+
+* * 最终一致是不直观的程序
+
+
+## **BASE**
+
+BASE：Basically Available, Soft-state, Eventually Consistent。 由 Eric Brewer 定义。
+
+CAP理论的核心是：一个分布式系统不可能同时很好的满足一致性，可用性和分区容错性这三个需求，最多只能同时较好的满足两个。
+
+BASE是NoSQL数据库通常对可用性及一致性的弱要求原则:
+
+* Basically Availble --基本可用
+* Soft-state --软状态\/柔性事务。 "Soft state" 可以理解为"无连接"的, 而 "Hard state" 是"面向连接"的
+* Eventual Consistency --最终一致性 最终一致性， 也是是 ACID 的最终目的。
+
+## **ACID vs BASE**
+
+| **ACIDBASE** |  |
+| :--- | :--- |
+| 原子性\(**A**tomicity\) | 基本可用\(**B**asically **A**vailable\) |
+| 一致性\(**C**onsistency\) | 软状态\/柔性事务\(**S**oft state\) |
+| 隔离性\(**I**solation\) | 最终一致性 \(**E**ventual consistency\) |
+| 持久性 \(**D**urable\) |  |
+
+## **NoSQL 数据库分类**
+
+| **类型部分代表特点** |  |  |
+| :--- | :--- | :--- |
+| 列存储 | Hbase Cassandra Hypertable | 顾名思义，是按列存储数据的。最大的特点是方便存储结构化和半结构化数据，方便做数据压缩，对针对某一列或者某几列的查询有非常大的IO优势。 |
+| 文档存储 | [MongoDB](https://wizardforcel.gitbooks.io/w3school-mongodb/content/www.yiibai.com/mongodb) CouchDB | 文档存储一般用类似json的格式存储，存储的内容是文档型的。这样也就有有机会对某些字段建立索引，实现关系数据库的某些功能。 |
+| key-value存储 | Tokyo Cabinet \/ Tyrant Berkeley DB MemcacheDB Redis | 可以通过key快速查询到其value。一般来说，存储不管value的格式，照单全收。（Redis包含了其他功能） |
+| 图存储 | Neo4J FlockDB | 图形关系的最佳存储。使用传统关系数据库来解决的话性能低下，而且设计使用不方便。 |
+| 对象存储 | db4o Versant | 通过类似面向对象语言的语法操作数据库，通过对象的方式存取数据。 |
+| xml数据库 | Berkeley DB XML BaseX | 高效的存储XML数据，并支持XML的内部查询语法，比如XQuery,Xpath。 |
+
+## **谁在使用**
+
+现在已经有很多公司使用了NoSQ：
+
++
+
+
+
+* Google
+* Facebook
+* Mozilla
+* Adobe
+* Foursquare
+* LinkedIn
+* Digg
+* McGraw-Hill Education
+* Vermont Public Radio
+
