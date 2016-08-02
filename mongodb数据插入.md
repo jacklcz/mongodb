@@ -16,7 +16,7 @@ BSON是一种类json的一种二进制形式的存储格式,简称Binary JSON。
 
 ```
 use mytest; 
-switch to db mytest;
+>switch to db mytest;
 ```
 
 ## **为MongoDB数据库定义一个文档**
