@@ -22,9 +22,19 @@ MongoDB将数据目录存储在 \*\*\/data\/db 目录下。但是这个数据目
 
 ![](/assets/BC304E0F-6B34-44AE-A86A-759D7972C49C.png)
 
-
-
 # **启动**
 
 **mongod &**
+
+**mongodb启动的参数说明：**
+
+| **参数描述** |  |
+| :--- | :--- |
+| --bind\_ip | 绑定服务IP，若绑定127.0.0.1，则只能本机访问，不指定默认本地所有IP |
+| --logpath | 定MongoDB日志文件，注意是指定文件不是目录 |
+| --logappend | 使用追加的方式写日志 |
+| --dbpath | 指定数据库路径 |
+| --port | 指定服务端口号，默认端口27017 |
+| --serviceName | 指定服务名称 |
+| --serviceDisplayNam | 指定服务名称，有多个mongodb服务时执行。 |
 
