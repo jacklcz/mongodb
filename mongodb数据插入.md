@@ -30,8 +30,8 @@ use mytest;
 将以上的文档数据存储到"mytest" 数据库中的 "userinfo" 集合，执行如下命令
 
 ```
-db.userinfo.insert(document);
+>db.userinfo.insert(document);
 
-show collections; //查看当前db所有集合
+>show collections; //查看当前db所有集合
 ```
 
