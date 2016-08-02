@@ -1,12 +1,6 @@
 # MongoDB 安装和使用
 
-> #### 安装 \(window\/mac 平台\)
-> 
-> Mac使用brew安装，配置环境变量即可
-
 # **window平台安装 MongoDB**
-
-## **MongoDB 下载**
 
 MongoDB提供了可用于32位和64位系统的预编译二进制包，你可以从MongoDB官网下载安装，MongoDB预编译二进制包下载地址：
 
