@@ -1,6 +1,6 @@
 # MongoDB 安装和使用
 
-# **window平台安装 MongoDB**
+# **window平台**
 
 [http:\/\/www.mongodb.org\/downloads](https://wizardforcel.gitbooks.io/w3school-mongodb/content/www.mongodb.org/downloads)
 
