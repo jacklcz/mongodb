@@ -26,6 +26,8 @@ MongoDB将数据目录存储在 \*\*\/data\/db 目录下。但是这个数据目
 
 **mongod &**
 
+![](/assets/EF3FF6FD-97DC-4AC4-BE59-466565183F7C.png)
+
 **mongodb启动的参数说明：**
 
 | **参数描述** |  |
@@ -36,5 +38,19 @@ MongoDB将数据目录存储在 \*\*\/data\/db 目录下。但是这个数据目
 | --dbpath | 指定数据库路径 |
 | --port | 指定服务端口号，默认端口27017 |
 | --serviceName | 指定服务名称 |
-| --serviceDisplayNam | 指定服务名称，有多个mongodb服务时执行。 |
+| --serviceDisplayNam | 指定服务名称，有多个mongodb服务时执行。dsf |
+
+
+
+
+
+
+
+## **MongoDB后台管理 Shell**
+
+MongoDB Shell是MongoDB自带的交互式Javascript shell,用来对MongoDB进行操作和管理的交互式环境。
+
+当你进入mongoDB后台后，它默认会链接到 test 文档（数据库）：
+
+![](/assets/756B8358-6788-4A8B-8D0A-4DBF1B5C40A9.png)
 
