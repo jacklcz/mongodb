@@ -73,7 +73,7 @@ Task: Retrieve all pages regarding athletics of Summer Olympic before 1950.
 
 ## **NoSQL 强调**
 
-强调Key-Value Stores和文档数据库的优点，而不是单纯的反对RDBMS。
+Key-Value Stores和文档数据库的优点，而不是单纯的反对RDBMS。
 
 ## **CAP定理（CAP theorem）**
 
