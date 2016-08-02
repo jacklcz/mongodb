@@ -22,3 +22,9 @@ MongoDB将数据目录存储在 \*\*\/data\/db 目录下。但是这个数据目
 
 ![](/assets/BC304E0F-6B34-44AE-A86A-759D7972C49C.png)
 
+
+
+# **启动**
+
+**mongod &**
+
