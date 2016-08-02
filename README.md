@@ -115,7 +115,6 @@ CAP理论的核心是：一个分布式系统不可能同时很好的满足一�
 * * 事务
 
 
-
 ## **BASE**
 
 BASE：Basically Available, Soft-state, Eventually Consistent。 由 Eric Brewer 定义。
@@ -137,9 +136,7 @@ BASE是NoSQL数据库通常对可用性及一致性的弱要求原则:
 | 隔离性\(**I**solation\) | 最终一致性 \(**E**ventual consistency\) |
 | 持久性 \(**D**urable\) |
 
-
-
-一篇比较好的柔性事务贴: http:\/\/www.zhihu.com\/question\/31813039\/answer\/53437637
+mark :  一篇比较好的柔性事务贴: http:\/\/www.zhihu.com\/question\/31813039\/answer\/53437637
 
 ## **NoSQL 数据库分类**
 
