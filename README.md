@@ -1,6 +1,6 @@
 # **NoSQL 简介**
 
-NoSQL\(NoSQL = Not Only SQL \)，意即"不仅仅是SQL"。
+NoSQL\(NoSQL = Not Only SQL \)，意即"不仅仅是SQL"。 
 
 在现代的计算系统上每天网络上都会产生庞大的数据量。
 
