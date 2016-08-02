@@ -16,3 +16,11 @@ MongoDB将数据目录存储在 \*\*\/data\/db 目录下。但是这个数据目
 
 从MongoDB目录的bin目录中执行mongod.exe文件。
 
+
+
+
+
+# **MAC平台**
+
+使用brew install mongodb ，配置环境变量即可。
+
