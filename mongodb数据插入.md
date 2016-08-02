@@ -22,7 +22,7 @@ use mytest;
 ## **为MongoDB数据库定义一个文档**
 
 ```
-document=({"userId":"1","name":"LiangChengZhu","age":18})
+>document=({"userId":"1","name":"LiangChengZhu","age":18})
 ```
 
 **在集合中插入文档**
