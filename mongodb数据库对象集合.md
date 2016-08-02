@@ -46,7 +46,7 @@ bson数据可以理解为在json的基础上添加了一些json中没有的数�
 文档例子如下：
 
 ```
-{ site : "w3cschool.cc" }
+{ site : "91jinrong.com" }
 
 ```
 
