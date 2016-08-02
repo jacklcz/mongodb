@@ -121,22 +121,6 @@ db.tutorials.php.findOne()
 
 ```
 
-## **capped collections**
-
-Capped collections 就是固定大小的collection。
-
-它有很高的性能以及队列过期的特性\(过期按照插入的顺序\). 有点和 "RRD" 概念类似。
-
-Capped collections是高性能自动的维护对象的插入顺序。它非常适合类似记录日志的功能 和标准的collection不同，你必须要显式的创建一个capped collection， 指定一个collection的大小，单位是字节。collection的数据存储空间值提前分配的。
-
-要注意的是指定的存储大小包含了数据库的头信息。&gt; db.createCollection\("mycoll", {capped:true, size:100000}\)
-
-* 在capped collection中，你能添加新的对象。
-* 能进行更新，然而，对象不会增加存储空间。如果增加，更新就会失败 。
-* 数据库不允许进行删除。使用drop\(\)方法删除collection所有的行。
-* 注意: 删除之后，你必须显式的重新创建这个collection。
-* 在32bit机器中，capped collection最大存储为1e9\( 1X109\)个字节。
-
 ## **元数据**
 
 数据库的信息是存储在集合中。它们使用了系统的命名空间：
