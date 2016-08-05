@@ -149,6 +149,5 @@ mark :  一篇比较好的柔性事务贴: http:\/\/www.zhihu.com\/question\/318
 | 对象存储 | db4o Versant | 通过类似面向对象语言的语法操作数据库，通过对象的方式存取数据。 |
 | xml数据库 | Berkeley DB XML BaseX | 高效的存储XML数据，并支持XML的内部查询语法，比如XQuery,Xpath。 |
 
-## 
+# 
 
-# mongodb
