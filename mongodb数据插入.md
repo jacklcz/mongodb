@@ -38,3 +38,16 @@ use mytest;
 ## **使用javaScript 批量插入文档**
 
 ![](/assets/A80F8C17-9497-47FC-A5E1-8760CFEEFDA9.png)
+
+
+
+
+
+## **查看集合中的数据**
+
+使用以下命令查看集合中的数据：
+
+```
+db.userinfo.find()
+```
+
