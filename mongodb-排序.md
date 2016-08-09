@@ -29,8 +29,7 @@ userinfo 集合中的数据如下：
 ```
 
 ```
->db.userinfo.find({},{"title":1,_id:0}).sort({"title":-1})
-{"title":"Tutorials Point Overview"}
+>db.userinfo.find({},{"userId":1}).sort({"title":-1}){"title":"Tutorials Point Overview"}
 {"title":"NoSQL Overview"}
 {"title":"MongoDB Overview"}
 >
