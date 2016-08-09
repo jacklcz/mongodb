@@ -50,7 +50,7 @@ aggregate\(\) 方法的基本语法格式如下所示：
 
 ```
 
-现在我们通过以上集合计算每个作者所写的文章数，使用aggregate\(\)计算结果如下：
+现在我们通过以上集合计算平均age，使用aggregate\(\)计算结果如下：
 
 ```
 > db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$sum : 1}}}])
