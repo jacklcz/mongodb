@@ -43,12 +43,8 @@ userinfo集合中的数据如下：
 我们先来新增方便group\(分组\)的一个 school 学校字段。
 
 ```
-db.userinfo.
+db.userinfo.update({"userId":{$gt:50}}, {$set: {"school": 'Tsinghua'}}, {multi: 1});
 ```
-
-
-
-
 
 现在我们通过以上集合计算平均age，使用aggregate\(\)计算结果如下：
 
