@@ -13,7 +13,9 @@ aggregate\(\) 方法的基本语法格式如下所示：
 ```
 >db.COLLECTION_NAME.aggregate(AGGREGATE_OPERATION)
 ```
+
 ### **实例**
+
 userinfo集合中的数据如下：
 
 ```
@@ -37,12 +39,13 @@ userinfo集合中的数据如下：
 
 我们先来新增方便group\(分组\)的一个 school 学校字段。
 
-``` 
+```
 db.userinfo.update({"userId":{$gt:50}}, {$set: {"school": 'Tsinghua'}}, {multi: 1});
 db.userinfo.update({"userId":{$lt:50}}, {$set: {"school": 'PKU'}}, {multi: 1});
 ```
 
 现在我们通过以上集合计算按照学校分组的总人数，使用aggregate\(\)计算结果如下：
+
 ```
 > db.userinfo.aggregate([{$group : {_id : "$school", count_user : {$sum : 1}}}]);
 { "_id" : "Tsinghua", "count_user" : 49 }
@@ -52,8 +55,10 @@ db.userinfo.update({"userId":{$lt:50}}, {$set: {"school": 'PKU'}}, {multi: 1});
 在上面的例子中，我们通过字段school字段对数据进行分组。
 下表展示了一些聚合的表达式:
 
-| **表达式描述实例** | | | 
-| :--- | :--- | :--- \|\| $sum \| 计算总和。 \| db.userinfo.aggregate\(\[{$group : {\_id : "$by\_user", num\_result : {$sum : "$age"}}}\]\) \|\| $avg \| 计算平均值 \| db.userinfo.aggregate\(\[{$group : {\_id : "$by\_user", num\_result : {$avg : "$age"}}}\]\) \|\| $min \| 获取集合中所有文档对应值得最小值。 \| db.userinfo.aggregate\(\[{$group : {\_id : "$by\_user", num\_result : {$min : "$age"}}}\]\) \|\| $max \| 获取集合中所有文档对应值得最大值。 \| db.userinfo.aggregate\(\[{$group : {\_id : "$by\_user", num\_result : {$max : "$age"}}}\]\) \|
-
-# \#
+| 表达式 | 描述 | 实例 |
+| :--- | :--- | :--- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  | |
 
