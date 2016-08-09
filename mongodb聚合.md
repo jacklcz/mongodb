@@ -50,20 +50,9 @@ db.userinfo.update({"userId":{$lt:50}}, {$set: {"school": 'PKU'}}, {multi: 1});
 现在我们通过以上集合计算按照学校分组的总人数，使用aggregate\(\)计算结果如下：
 
 ```
-> db.userinfo.aggregate([{$group : {_id : "$school", count_age : {$sum : 1}}}]){
-   "result" : [
-      {
-         "_id" : "w3cschool.cc",
-         "num_tutorial" : 2
-      },
-      {
-         "_id" : "Neo4j",
-         "num_tutorial" : 1
-      }
-   ],
-   "ok" : 1
-}
->
+> db.userinfo.aggregate([{$group : {_id : "$school", count_user : {$sum : 1}}}]);
+{ "_id" : "Tsinghua", "count_user" : 49 }
+{ "_id" : "PKU", "count_user" : 49 }
 
 ```
 
