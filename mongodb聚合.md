@@ -44,7 +44,10 @@ userinfo集合中的数据如下：
 
 ```
 db.userinfo.update({"userId":{$gt:50}}, {$set: {"school": 'Tsinghua'}}, {multi: 1});
+db.userinfo.update({"userId":{$lt:50}}, {$set: {"school": 'PKU'}}, {multi: 1});
 ```
+
+
 
 现在我们通过以上集合计算平均age，使用aggregate\(\)计算结果如下：
 
