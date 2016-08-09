@@ -56,7 +56,7 @@ db.userinfo.update({"userId":{$lt:50}}, {$set: {"school": 'PKU'}}, {multi: 1});
 
 ```
 
-在上面的例子中，我们通过字段school字段对数据进行分组，并计算by\_user字段相同值的总和。
+在上面的例子中，我们通过字段school字段对数据进行分组。
 
 下表展示了一些聚合的表达式:
 
