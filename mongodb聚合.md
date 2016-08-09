@@ -21,32 +21,22 @@ aggregate\(\) 方法的基本语法格式如下所示：
 
 ```
 {
-   _id: ObjectId(7df78ad8902c)
-   title: 'MongoDB Overview',
-   description: 'MongoDB is no sql database',
-   by_user: 'w3cschool.cc',
-   url: 'http://www.w3cschool.cc',
-   tags: ['mongodb', 'database', 'NoSQL'],
-   likes: 100
-},
-{
-   _id: ObjectId(7df78ad8902d)
-   title: 'NoSQL Overview',
-   description: 'No sql database is very fast',
-   by_user: 'w3cschool.cc',
-   url: 'http://www.w3cschool.cc',
-   tags: ['mongodb', 'database', 'NoSQL'],
-   likes: 10
-},
-{
-   _id: ObjectId(7df78ad8902e)
-   title: 'Neo4j Overview',
-   description: 'Neo4j is no sql database',
-   by_user: 'Neo4j',
-   url: 'http://www.neo4j.com',
-   tags: ['neo4j', 'database', 'NoSQL'],
-   likes: 750
-},
+{ "_id" : ObjectId("57a07aace6cf836271b9b597"), "userId" : 21, "age" : 39 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b598"), "userId" : 22, "age" : 40 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b599"), "userId" : 23, "age" : 41 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b59a"), "userId" : 24, "age" : 42 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b59b"), "userId" : 25, "age" : 43 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b59c"), "userId" : 26, "age" : 44 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b59d"), "userId" : 27, "age" : 45 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b59e"), "userId" : 28, "age" : 46 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b59f"), "userId" : 29, "age" : 47 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5a0"), "userId" : 30, "age" : 48 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5a1"), "userId" : 31, "age" : 49 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5a2"), "userId" : 32, "age" : 50 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5a3"), "userId" : 33, "age" : 51 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5a4"), "userId" : 34, "age" : 52 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5a5"), "userId" : 35, "age" : 53 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5a6"), "userId" : 36, "age" : 54 }
 
 ```
 
