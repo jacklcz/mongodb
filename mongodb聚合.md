@@ -56,8 +56,6 @@ db.userinfo.update({"userId":{$lt:50}}, {$set: {"school": 'PKU'}}, {multi: 1});
 
 ```
 
-以上实例类似sql语句： _select by\_user, count\(\*\) from mycol group by by\_user_
-
 在上面的例子中，我们通过字段by\_user字段对数据进行分组，并计算by\_user字段相同值的总和。
 
 下表展示了一些聚合的表达式:
