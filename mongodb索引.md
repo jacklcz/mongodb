@@ -61,5 +61,15 @@ db.values.ensureIndex({open: 1, close: 1}, {background: true})
 
 ```
 
-通过在创建索引时加background:true 的选项，让创建工作在后台执行
+通过在创建索引时加background:true 的选项，让创建工作在后台执行。
+
+
+
+
+
+## 查看索引
+
+```
+db.userinfo.getIndexes()
+```
 
