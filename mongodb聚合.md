@@ -40,10 +40,13 @@ db.userinfo.update({"userId":{$lt:50}}, {$set: {"school": 'PKU'}}, {multi: 1});
 ```
 > db.userinfo.aggregate([{$group : {_id : "$school", count_user : {$sum : 1}}}]);{ "_id" : "Tsinghua", "count_user" : 49 }{ "_id" : "PKU", "count_user" : 49 }
 ```
-在上面的例子中，我们通过字段school字段对数据进行分组。下表展示了一些聚合的表达式:
 
-|表达式 |       描述|  实例 |
----|---|---
+ 在上面的例子中，我们通过字段school字段对数据进行分组。下表展示了一些聚合的表达式。
+
+
+
+||
+|------|:-------:|-------|
 | $sum | 计算总和 | db.userinfo.aggregate\(\[{$group : {\_id : "$school", num\_result : {$sum : "$age"}}}\]\)|
 | $avg | 计算平均值 | db.userinfo.aggregate\(\[{$group : {\_id : "$school", num\_result : {$avg : "$age"}}}\]\) |
 | $min | 获取集合中所有文档对应值得最小值 | db.userinfo.aggregate\(\[{$group : {\_id : "$school", num\_result : {$min : "$age"}}}\]\) |
