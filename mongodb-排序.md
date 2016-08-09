@@ -29,11 +29,16 @@ userinfo 集合中的数据如下：
 ```
 
 ```
->db.userinfo.find({},{"userId":1}).sort({"title":-1}){"title":"Tutorials Point Overview"}
-{"title":"NoSQL Overview"}
-{"title":"MongoDB Overview"}
->
+>db.userinfo.find({},{"userId":1}).sort({"userId":-1});
 
+{ "_id" : ObjectId("57a07aace6cf836271b9b5e5"), "userId" : 99 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5e4"), "userId" : 98 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5e3"), "userId" : 97 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5e2"), "userId" : 96 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5e1"), "userId" : 95 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5e0"), "userId" : 94 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5df"), "userId" : 93 }
+{ "_id" : ObjectId("57a07aace6cf836271b9b5de"), "userId" : 92 }
 ```
 
 **注：** 如果没有指定sort\(\)方法的排序方式，默认按照文档的升序排序
