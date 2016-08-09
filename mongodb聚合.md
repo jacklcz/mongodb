@@ -60,5 +60,6 @@ db.userinfo.update({"userId":{$lt:50}}, {$set: {"school": 'PKU'}}, {multi: 1});
 |  |  |  |
 |  |  |  |
 |  |  |  |
-|  |  | |
+|  |  |   |
+|  | | |
 
