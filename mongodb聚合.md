@@ -17,7 +17,7 @@ aggregate\(\) 方法的基本语法格式如下所示：
 
 ### **实例**
 
-集合中的数据如下：
+userinfo集合中的数据如下：
 
 ```
 {
@@ -43,7 +43,7 @@ aggregate\(\) 方法的基本语法格式如下所示：
 现在我们通过以上集合计算平均age，使用aggregate\(\)计算结果如下：
 
 ```
-> db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$sum : 1}}}])
+> db.userinfo.aggregate([{$group : {_id : "$by_user", count_age : {$sum : 1}}}])
 {
    "result" : [
       {
