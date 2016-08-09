@@ -40,9 +40,13 @@ userinfo集合中的数据如下：
 
 ```
 
-
-
 我们先来新增方便group\(分组\)的一个 school 学校字段。
+
+```
+db.userinfo.
+```
+
+
 
 
 
