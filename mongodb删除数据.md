@@ -10,10 +10,7 @@ MongoDB集合的删除。
 
 ```
 > db.userinfo.find();
-
 ```
-
-
 
 ## **使用 remove\(\) 函数移除数据**
 
@@ -21,7 +18,6 @@ MongoDB集合的删除。
 
 ```
 > db.userinfo.remove( { "userId" : 1 } )
-
 ```
 
 ## **删除所有数据**
@@ -30,7 +26,6 @@ MongoDB集合的删除。
 
 ```
 > db.userinfo.remove({})
-
 ```
 
 ## **使用drop\(\)删除集合**
@@ -41,8 +36,6 @@ MongoDB集合的删除。
 > db.userinfo.drop()
 ```
 
-
-
 drop\(\)函数返回 true或者false。以上执行结果返回了true，说明操作成功。
 
 ## **使用dropDatabase\(\)函数删除数据库**
@@ -51,12 +44,7 @@ drop\(\)函数返回 true或者false。以上执行结果返回了true，说明�
 
 ```
 > db.dropDatabase()
-
 ```
 
 执行命令前查看当前使用的数据库是一个良好的习惯，这样可以确保你要删除数据库是正确的，以免造成误操作而产生数据丢失的后果：
-
-
-
-
 
