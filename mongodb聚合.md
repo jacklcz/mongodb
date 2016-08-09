@@ -47,13 +47,10 @@ db.userinfo.update({"userId":{$gt:50}}, {$set: {"school": 'Tsinghua'}}, {multi: 
 db.userinfo.update({"userId":{$lt:50}}, {$set: {"school": 'PKU'}}, {multi: 1});
 ```
 
-
-
-现在我们通过以上集合计算平均age，使用aggregate\(\)计算结果如下：
+现在我们通过以上集合计算总age，使用aggregate\(\)计算结果如下：
 
 ```
-> db.userinfo.aggregate([{$group : {_id : "$by_user", count_age : {$sum : 1}}}])
-{
+> db.userinfo.aggregate([{$group : {_id : "$school", count_age : {$sum : 1}}}]){
    "result" : [
       {
          "_id" : "w3cschool.cc",
